@@ -1,0 +1,36 @@
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dewn2dcaterpillar.LeaderboardFXMLController">
+    <children>
+        <ImageView fitHeight="441.0" fitWidth="559.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@background.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="144.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leaderboard" textAlignment="CENTER" wrappingWidth="273.13671875">
+            <font>
+                <Font name="Malgun Gothic Bold" size="36.0" />
+            </font>
+        </Text>
+        <HBox alignment="CENTER" layoutX="181.0" layoutY="396.0" prefHeight="31.0" prefWidth="200.0" spacing="60.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#backToGameAction" text="Back to Game" />
+                <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitButtonAction" text="Exit" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="180.0" layoutY="365.0" prefHeight="31.0" prefWidth="200.0" spacing="10.0">
+            <children>
+                <TextField fx:id="nameTextField" prefHeight="25.0" prefWidth="147.0" text="Name" />
+                <Button mnemonicParsing="false" onAction="#saveAction" text="Save" />
+            </children>
+        </HBox>
+        <TextArea fx:id="leaderTextArea" layoutX="34.0" layoutY="55.0" opacity="0.28" prefHeight="284.0" prefWidth="493.0" />
+    </children>
+</AnchorPane>

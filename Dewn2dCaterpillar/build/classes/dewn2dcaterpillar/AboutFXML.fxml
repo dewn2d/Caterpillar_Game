@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dewn2dcaterpillar.AboutFXMLController">
+   <children>
+      <ImageView fitHeight="441.0" fitWidth="559.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitButton" layoutX="309.0" layoutY="383.0" mnemonicParsing="false" onAction="#exitButtonAction" text="Exit" />
+      <Button layoutX="166.0" layoutY="382.0" mnemonicParsing="false" onAction="#backToGameAction" text="Back to Game" />
+      <TextArea fx:id="aboutText" layoutX="32.0" layoutY="31.0" prefHeight="333.0" prefWidth="501.0" wrapText="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+1) 	a) my program consists of multiple classes; Dewn2dCaterpillar, gameTimer, caterpillarModel 
+	b)
+	c) gameTimer class is an abstract class
+	d) in the FoodPackage package, food.java is an interface
+	
+2) 	a) in caterpillarModel I used an ArrayList for the body of the caterpillarModel
+	b) in FXMLDocumentController Exception handling was used when switching scenes  to the about page
+	
+3)  the project uses MVC
+
+4)	the program utilizes 2 scenes one for the game and one for the about page
+	the game has a menu anchor pane that is is hidden when the game has started and reappears when
+	escape is pressed or the game has ended.
+	
+5)	The about page is accessed by clicking the about button in the menu
+
+6)	

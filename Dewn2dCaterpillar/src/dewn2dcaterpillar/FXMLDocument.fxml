@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#keyPressed" prefHeight="441.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dewn2dcaterpillar.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="441.0" fitWidth="559.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="413.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="441.0" prefWidth="6.0" />
+      <AnchorPane fx:id="board" layoutX="12.0" layoutY="12.0" prefHeight="414.0" prefWidth="392.0" />
+      <VBox layoutX="418.0" layoutY="2.0" prefHeight="435.0" prefWidth="138.0" spacing="10.0">
+         <children>
+            <Text fx:id="timerText" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="67.7294921875" />
+            <Text fx:id="scoreText" strokeType="OUTSIDE" strokeWidth="0.0" text="Score: 0" wrappingWidth="99.7294921875" />
+            <Text fx:id="weightText" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight: 3" wrappingWidth="67.7294921875" />
+            <ImageView fitHeight="301.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5">
+               <image>
+                  <Image url="@ad.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Button fx:id="dontButton" mnemonicParsing="false" onAction="#upAction" text="Dont Click " />
+         </children>
+         <padding>
+            <Insets left="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <AnchorPane fx:id="menu" prefHeight="441.0" prefWidth="559.0">
+         <children>
+            <ImageView fitHeight="408.0" fitWidth="537.0" layoutX="14.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@caterpillar.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="menuText" fontSmoothingType="LCD" layoutX="34.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="468.7294921875">
+               <font>
+                  <Font name="NanumBarunGothic Bold" size="77.0" />
+               </font>
+            </Text>
+            <Text layoutX="146.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feed The Very Hungry Caterpillar " textAlignment="CENTER" wrappingWidth="272.7294921875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="159.0" layoutY="138.0" prefHeight="159.0" prefWidth="215.0">
+               <children>
+                  <Text fx:id="finalScoreBanner" fontSmoothingType="LCD" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Final Score" textAlignment="CENTER" wrappingWidth="215.0">
+                     <font>
+                        <Font name="NanumBarunGothic Bold" size="34.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="finalScore" fontSmoothingType="LCD" layoutX="79.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000" textAlignment="CENTER">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <VBox layoutX="374.0" layoutY="148.0" prefHeight="200.0" prefWidth="117.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#aboutAction" text="About" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" onAction="#leaderAction" text="Leaderboard" />
+                  <Button mnemonicParsing="false" onAction="#exitButtonAction" text="Exit" />
+               </children>
+            </VBox>
+            <VBox layoutX="97.0" layoutY="151.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Button fx:id="startButton" mnemonicParsing="false" onAction="#resumeAction" text="Start" />
+                  <Button mnemonicParsing="false" onAction="#reset" text="Restart" />
+                  <Button fx:id="testButton" mnemonicParsing="false" onAction="#difficultyAction" text="Difficulty" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
